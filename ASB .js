@@ -1,6 +1,6 @@
 var timer = getElementById('timer');
 
-var timer = getElementById('arm');
+var armCode = getElementById('arm');
 
 var disarmCode = getElementById('disarm');
 
@@ -11,4 +11,22 @@ function setTimer() {
   } else {
     window.alert("Timer Set!");
   }
-}
+};
+
+function setArmCode() {
+  var armCode2 = getElementById('arm');
+  if (armCode2 == armCode) {
+    window.alert("Ready To Arm");
+  } else {
+    window.alert("Incorrect Code! Try Again!");
+  }
+};
+
+function setDisarmCode() {
+  var disarmCode2 = getElementById('disarm');
+  if (disarmCode2 == disarmCode) {
+    window.alert("Disarmed!");
+  } else {
+    window.alert("BOOM YOU'RE DEAD!!!");
+  }
+};
