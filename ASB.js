@@ -37,4 +37,4 @@ console.log(armCode2);
 console.log(disarmCode);
 console.log(disarmCode2);
 
-//Ver. 0
+//Ver. 0.02
