@@ -1,10 +1,11 @@
-var timer = document.getElementById('timer');
 
-var armCode = document.getElementById('armCode2');
+var disarmCode = document.getElementById("disarmCode");
 
-var disarmCode = document.getElementById('disarmCode');
+var disarmCode2 = document.getElementById("disarmCode2");
+
 
 function setTimer() {
+var timer = document.getElementById("timer");
   if (timer < 1 && timer > 600) {
     window.alert("Timer Set!");
   } else {
@@ -13,7 +14,8 @@ function setTimer() {
 };
 
 function setArmCode() {
-  var armCode2 = document.getElementById('arm2');
+  var armCode = document.getElementById("armCode");
+  var armCode2 = document.getElementById("armCode2");
   if (armCode2 == armCode) {
     window.alert("Ready To Arm");
   } else {
@@ -22,12 +24,13 @@ function setArmCode() {
 };
 
 function setDisarmCode() {
-  var disarmCode2 = document.getElementById('disarm2');
-  if (disarmCode2 == disarmCode) {
+var disarmCode = document.getElementById("disarmCode");
+var disarmCode2 = document.getElementById("disarmCode2");
+  if (disarmCode == disarmCode2) {
     window.alert("Disarmed!");
   } else {
     window.alert("BOOM YOU'RE DEAD!!!");
   }
 };
 
-//Ver. 0.03
+//Ver. 0.04

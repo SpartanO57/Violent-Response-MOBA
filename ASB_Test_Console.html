@@ -8,20 +8,22 @@
 <body>
     <form>
         Timer: <br>
-        <input onkeypress="return" type="text" name="setTimer" id='timer'>
-        <button onclick="setTimer()">Set Timer</button><br>
+        <input onkeypress="return" type="text" name="setTimer" id="timer"><br>
         Admin Arm Code:<br>
-        <input type="text" name="AdminArmCode" id='armCode2'>
-        <button onclick="setTimer()">Set Arm Code</button><br>
+        <input type="text" name="AdminArmCode" id="armCode"><br>
         Arm code:<br>
-        <input type="text" name='armCode'>
-        <button onclick="setTimer()">Arm Bomb</button><br>
+        <input type="text" name="armCode2"><br>
+        Admin Disarm Code:<br>
+        <input type="text" name="adminDisarmCode" id="disarmCode"><br>
         Disarm Code:<br>
-        <input type="text" name='disarmCode'>
-        <button onclick="setTimer()">Attempt Disarm</button><br>
+        <input type="text" name="disarmCode" id="disarmCode2"><br>
+        <button onclick="setTimer()" type="submit" name="timer">Set timer</button>
+        <button onclick="setArmCode()" type="submit" name="Arm">Arm bomb</button>
+        <button onclick="setDisarmCode()" type="submit" name="disarm">Disarm Bomb</button>
     </form>
 </body>
 <footer>
 <h2>Copyright (c) 2018 Violent Response Airsoft & Violent Response Entertainment. All Rights Reserved. For Entertainment purposes and airsoft use only.</h2>
 </footer>
-<!--Ver 0.03-->
+
+<!--Ver. 0.04-->
