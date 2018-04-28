@@ -1,20 +1,19 @@
 var timer = document.getElementById('timer');
 
-var armCode = document.getElementById('arm');
+var armCode = document.getElementById('armCode2');
 
-var disarmCode = document.getElementById('disarm');
+var disarmCode = document.getElementById('disarmCode');
 
 function setTimer() {
-  var timer = document.getElementById('timer');
-  if (timer < 1 || timer > 600) {
-    window.alert("Timer must be set between 1 & 600 seconds");
-  } else {
+  if (timer < 1 && timer > 600) {
     window.alert("Timer Set!");
+  } else {
+    window.alert("Timer must be set between 1 & 600 seconds");
   }
 };
 
 function setArmCode() {
-  var armCode2 = document.getElementById('arm');
+  var armCode2 = document.getElementById('arm2');
   if (armCode2 == armCode) {
     window.alert("Ready To Arm");
   } else {
@@ -23,7 +22,7 @@ function setArmCode() {
 };
 
 function setDisarmCode() {
-  var disarmCode2 = document.getElementById('disarm');
+  var disarmCode2 = document.getElementById('disarm2');
   if (disarmCode2 == disarmCode) {
     window.alert("Disarmed!");
   } else {
@@ -31,10 +30,4 @@ function setDisarmCode() {
   }
 };
 
-console.log(timer);
-console.log(armCode);
-console.log(armCode2);
-console.log(disarmCode);
-console.log(disarmCode2);
-
-//Ver. 0.02
+//Ver. 0.03

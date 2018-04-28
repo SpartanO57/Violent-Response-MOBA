@@ -1,29 +1,27 @@
 <DOCTYPE html>
 <html>
-<head
+<head>
 <title>MOBA Test Page</title>
-<script src="ASB.js"></script>
+<script type="text/javascript" src="ASB.js"></script>
 <script   src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="inputForms">
-    <form id="formWrap">
-      <div>
+    <form>
         Timer: <br>
-        <input type="text" name="setTimer" id='timer'>
-        <p><button onclick="setTimer">Set Timer</button></p><br>
-      </div>
+        <input onkeypress="return" type="text" name="setTimer" id='timer'>
+        <button onclick="setTimer()">Set Timer</button><br>
+        Admin Arm Code:<br>
+        <input type="text" name="AdminArmCode" id='armCode2'>
+        <button onclick="setTimer()">Set Arm Code</button><br>
         Arm code:<br>
-        <input type="text" name="armCode">
-        <input type="submit" value="submit"><br>
+        <input type="text" name='armCode'>
+        <button onclick="setTimer()">Arm Bomb</button><br>
         Disarm Code:<br>
-        <input type="text" name="disarmCode">
-        <input type="submit" value="submit"><br>
-      </div>
+        <input type="text" name='disarmCode'>
+        <button onclick="setTimer()">Attempt Disarm</button><br>
     </form>
-  </div>
 </body>
 <footer>
 <h2>Copyright (c) 2018 Violent Response Airsoft & Violent Response Entertainment. All Rights Reserved. For Entertainment purposes and airsoft use only.</h2>
 </footer>
-<!--Ver 0.02-->
+<!--Ver 0.03-->
